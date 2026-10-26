@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>All payments · Admin</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main>
+  <h1>Admin console</h1>
+  <p class="sub" id="who"></p>
+  <nav class="tabs"><a class="tab" href="admin.html">👥 All workers</a><a class="tab" href="adminpay.html" aria-current="page">🧾 All payments &amp; discrepancies</a></nav>
+  <hr>
+  <div id="ap">
+    <div class="tools">
+      <input id="q" placeholder="Search worker, platform, job, txn" aria-label="Search">
+      <select id="wf" aria-label="Worker"></select>
+      <select id="sf" aria-label="Status"><option value="">All</option><option value="PAID">Paid</option><option value="LATE">Late</option><option value="PENDING">Pending</option><option value="DISC">Discrepancies</option></select>
+    </div>
+    <div id="out"></div>
+  </div>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>

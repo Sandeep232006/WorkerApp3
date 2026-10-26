@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign in · Gig Worker Tracker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap">
+<link rel="stylesheet" href="app.css">
+<style>
+[hidden]{display:none!important}
+.wrap{min-height:100vh;display:grid;grid-template-columns:1.15fr 1fr}
+.hero{position:relative;overflow:hidden;background:#0d1b4c;color:#fff;padding:56px 56px 48px;display:flex;flex-direction:column;justify-content:center;gap:28px}
+.hero:before{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-160px;border-radius:50%;background:radial-gradient(circle,#6d8bff55,#6d8bff00 70%)}
+.hero:after{content:"";position:absolute;width:420px;height:420px;left:-160px;bottom:-180px;border-radius:50%;background:radial-gradient(circle,#2f5bff55,#2f5bff00 70%)}
+.hero>*{position:relative;z-index:1}
+.logo{display:flex;align-items:center;gap:10px;font:600 17px "IBM Plex Sans",sans-serif}
+.logo i{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#fff;color:#1e3a8a;font-style:normal;font-size:19px}
+.hero h1{font:600 clamp(30px,3.6vw,46px)/1.15 "Source Serif 4",Georgia,serif;margin:0;border:0;padding:0;max-width:520px}
+.hero h1 em{font-style:normal;color:#9db4ff}
+.perks{list-style:none;margin:0;padding:0;display:grid;gap:14px;color:#c9d0e0}
+.perks li{display:flex;gap:12px;align-items:center}
+.perks span{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:#ffffff14}
+.side{display:grid;place-items:center;padding:32px 20px;background:var(--bg)}
+.panel{width:100%;max-width:420px}
+.panel h2{margin:0 0 4px;font-size:28px}
+.panel .sub{margin:0 0 22px}
+.seg{display:grid;grid-template-columns:1fr 1fr;background:var(--lock-bg);border-radius:12px;padding:4px;margin-bottom:22px}
+.seg button{font:500 15px "IBM Plex Sans",sans-serif;border:0;background:none;color:var(--mute);padding:10px;border-radius:9px;cursor:pointer}
+.seg button[aria-selected=true]{background:var(--card);color:var(--ink);box-shadow:0 1px 4px #0002}
+.panel form{padding:0;max-width:none;gap:16px}
+.field{position:relative}
+.field label{margin-bottom:6px}
+.field input{padding:13px 14px 13px 42px;border-radius:12px;background:var(--card);font-size:16px}
+.field input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px #1e3a8a33}
+.field .ic{position:absolute;left:14px;bottom:13px;font-size:16px;opacity:.7;pointer-events:none}
+.eye{position:absolute;right:8px;bottom:6px;border:0;background:none;color:var(--mute);font:500 13px "IBM Plex Sans",sans-serif;padding:8px;cursor:pointer}
+.panel .go{padding:14px;border-radius:12px;font-size:16px;transition:transform .12s,box-shadow .12s}
+.panel .go:hover{transform:translateY(-1px);box-shadow:0 6px 16px #1e3a8a55}
+.demo{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--mute)}
+.demo div{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.demo button{font:500 14px "IBM Plex Sans",sans-serif;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:7px 14px;cursor:pointer}
+.demo button:hover{border-color:var(--accent)}
+@media (max-width:860px){.wrap{grid-template-columns:1fr}.hero{padding:32px 24px 28px;gap:18px}.perks{display:none}.side{padding-top:24px;align-items:start}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="logo"><i>₹</i> Gig Worker Tracker</div>
+    <h1>Know what you earned. Know <em>when you'll be paid.</em></h1>
+    <ul class="perks">
+      <li><span>💰</span> Track earnings across every platform</li>
+      <li><span>📅</span> See each payout date before it arrives</li>
+      <li><span>🚩</span> Catch short, late or missing payments</li>
+    </ul>
+  </section>
+
+  <section class="side">
+    <div class="panel">
+      <h2 id="title">Welcome back</h2>
+      <p class="sub" id="lead">Sign in to see your earnings and payouts.</p>
+      <div class="seg" role="tablist">
+        <button id="tl" role="tab" aria-selected="true">Sign in</button>
+        <button id="tr" role="tab" aria-selected="false">Create account</button>
+      </div>
+
+      <form id="li">
+        <div class="field"><label for="lw">Worker ID</label><span class="ic">🪪</span><input id="lw" autocomplete="off" placeholder="e.g. W1"></div>
+        <div class="field"><label for="lp">Password</label><span class="ic">🔒</span><input id="lp" type="password" autocomplete="current-password" placeholder="Your password"><button class="eye" type="button" id="eye">Show</button></div>
+        <p class="err" id="le"></p>
+        <button class="go" type="submit">Sign in →</button>
+        <div class="demo">Try a demo account (fills the password for you)
+          <div><button type="button" data-w="W1" data-p="23042006">Priya Shaik · W1</button><button type="button" data-w="W2" data-p="23042006">Manoj Babu · W2</button><button type="button" data-w="W100" data-p="23042006">W100</button></div>
+        </div>
+      </form>
+
+      <form id="rg" hidden>
+        <div class="field"><label for="rw">Worker ID</label><span class="ic">🪪</span><input id="rw" autocomplete="off" placeholder="Choose an ID, e.g. W10"></div>
+        <div class="field"><label for="rn">Full name</label><span class="ic">👤</span><input id="rn" autocomplete="off" placeholder="Your name"></div>
+        <div class="field"><label for="rp">Phone number</label><span class="ic">📱</span><input id="rp" inputmode="numeric" autocomplete="off" placeholder="10 digits"></div>
+        <div class="field"><label for="rq">Create a password</label><span class="ic">🔒</span><input id="rq" type="password" autocomplete="new-password" placeholder="At least 6 characters"></div>
+        <p class="err" id="re"></p>
+        <button class="go" type="submit">Create account →</button>
+      </form>
+    </div>
+  </section>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+async function post(url, o) {
+  const r = await fetch(url, {method: "POST", body: new URLSearchParams(o)}), d = await r.json();
+  if (!r.ok) throw new Error(d.error || "Request failed.");
+  return d;
+}
+async function enter(wid, pw) {
+  const d = await post("/api/login", {wid, pw});
+  sessionStorage.setItem("u", JSON.stringify({wid: d.role === "admin" ? wid : wid.toUpperCase(), wn: d.name, token: d.token, role: d.role}));
+  location.href = d.role === "admin" ? "admin.html" : "summary.html";
+}
+function mode(login) {
+  $("li").hidden = !login; $("rg").hidden = login;
+  $("tl").setAttribute("aria-selected", login); $("tr").setAttribute("aria-selected", !login);
+  $("title").textContent = login ? "Welcome back" : "Join in a minute";
+  $("lead").textContent = login ? "Sign in to see your earnings and payouts." : "Create a free account to start tracking.";
+}
+$("tl").onclick = () => mode(true);
+$("tr").onclick = () => mode(false);
+$("eye").onclick = () => { const p = $("lp"); const show = p.type === "password"; p.type = show ? "text" : "password"; $("eye").textContent = show ? "Hide" : "Show"; };
+document.querySelectorAll(".demo button").forEach(b => b.onclick = () => { $("lw").value = b.dataset.w; $("lp").value = b.dataset.p; $("le").textContent = ""; });
+$("li").onsubmit = async e => { e.preventDefault(); try { await enter($("lw").value.trim(), $("lp").value.trim()); } catch (x) { $("le").textContent = x.message; } };
+$("rg").onsubmit = async e => {
+  e.preventDefault();
+  const o = {wid: $("rw").value.trim(), wn: $("rn").value.trim(), phone: $("rp").value.trim(), pw: $("rq").value};
+  try { await post("/api/register", o); await enter(o.wid, o.pw); } catch (x) { $("re").textContent = x.message; }
+};
+</script>
+</body>
+</html>

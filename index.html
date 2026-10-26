@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Add job · Gig Worker Tracker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main>
+  <h1>Gig worker earnings tracker</h1>
+  <p class="sub" id="who"></p>
+  <nav class="tabs"><a class="tab" href="summary.html">📊 My earnings</a><a class="tab" href="schedule.html">📅 Payout schedule</a><a class="tab" href="overview.html">🧾 My payments</a><a class="tab" href="index.html" aria-current="page">➕ Add job</a></nav>
+  <hr>
+  <form id="f" novalidate>
+      <div class="row"><div><label for="jid">Job ID</label><input id="jid" autocomplete="off"></div>
+        <div><label for="jt">Job title (e.g. Food delivery)</label><input id="jt" list="jts" autocomplete="off" placeholder="Choose or type a job"><datalist id="jts"><option>Bike taxi rides<option>Auto rides<option>Cab rides<option>Food delivery<option>Grocery delivery<option>Home service jobs<option>Goods transport<option>Courier delivery<option>Parcel delivery</datalist></div></div>
+      <div class="row"><div><label for="pl">Platform</label><input id="pl" list="pls" autocomplete="off" placeholder="Choose or type a platform"><datalist id="pls"><option>Rapido<option>Uber<option>Ola<option>Swiggy<option>Zomato<option>Blinkit<option>Zepto<option>Urban Company<option>Porter<option>Shadowfax<option>Amazon Flex<option>Borzo</datalist></div>
+        <div><label for="gr">Gross amount (Rs.)</label><input id="gr" type="number" step="0.01" min="0" inputmode="decimal"></div></div>
+      <div class="row"><div><label for="ft">Fee model</label><select id="ft"><option value="p">Percentage (%)</option></select></div>
+        <div><label for="fv" id="fl">Platform fee rate (%)</label><input id="fv" type="number" step="0.01" min="0" inputmode="decimal"></div></div>
+      <div class="row"><div><label for="sd">Work start date</label><input id="sd" type="date"></div>
+        <div><label for="ed">Work end date</label><input id="ed" type="date"></div></div>
+      <div class="row"><div><label for="hh">Hours worked per day (optional)</label><input id="hh" type="number" step="0.5" min="0.5" max="16" inputmode="decimal"></div>
+        <div><label>Duration of the job</label><div class="prev" id="dur">0 days</div></div></div>
+      <div class="prev" id="prev">Expected payout: Rs. 0.00</div>
+      <div class="row"><div><label for="tx">Transaction ID</label><input id="tx" autocomplete="off"></div>
+        <div><label for="due">Scheduled payout date</label><input id="due" type="date"></div></div>
+      <div class="row"><div><label for="pd">Paid date (blank if unpaid)</label><input id="pd" type="date"></div>
+        <div><label for="ac">Actual payout (Rs.)</label><input id="ac" type="number" step="0.01" min="0" inputmode="decimal"></div></div>
+      <p class="err" id="err" role="alert"></p>
+      <button class="go" id="sub" type="submit">Save record</button>
+    </form>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

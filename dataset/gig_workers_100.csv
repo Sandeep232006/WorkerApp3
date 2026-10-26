@@ -1,0 +1,101 @@
+worker_id,name,phone,city,primary_platform,job_type,joined
+W1,Sandeep,9000000001,Bengaluru,Rapido,Auto rides,2026-06-09
+W2,Manoj Babu,9000000002,Bengaluru,Rapido,Auto rides,2025-11-17
+W3,Neha Prasad,9000000003,Delhi,Rapido,Bike taxi rides,2026-01-20
+W4,Sunitha Yadav,9000000004,Vijayawada,Rapido,Auto rides,2025-11-08
+W5,Sowmya Varma,9000000005,Tirupati,Rapido,Auto rides,2026-04-19
+W6,Suresh Gupta,9000000006,Vijayawada,Rapido,Auto rides,2024-02-02
+W7,Sunitha Verma,9000000007,Tirupati,Rapido,Bike taxi rides,2025-05-17
+W8,Teja Naidu,9000000008,Chennai,Rapido,Auto rides,2024-01-16
+W9,Charan Mohammed,9000000009,Delhi,Rapido,Auto rides,2025-03-11
+W10,Pooja Prasad,9000000010,Bengaluru,Rapido,Auto rides,2024-12-27
+W11,Imran Menon,9000000011,Bengaluru,Rapido,Auto rides,2025-12-08
+W12,Deepak Iyer,9000000012,Visakhapatnam,Rapido,Bike taxi rides,2025-11-20
+W13,Arun Verma,9000000013,Hyderabad,Rapido,Auto rides,2025-07-11
+W14,Salman Ali,9000000014,Mumbai,Rapido,Auto rides,2024-10-17
+W15,Mahesh Verma,9000000015,Hyderabad,Rapido,Auto rides,2024-09-24
+W16,Kiran Yadav,9000000016,Bengaluru,Rapido,Auto rides,2026-01-12
+W17,Suresh Pillai,9000000017,Hyderabad,Rapido,Auto rides,2024-12-24
+W18,Arun Prasad,9000000018,Warangal,Rapido,Bike taxi rides,2024-07-21
+W19,Arun Kumar,9000000019,Vijayawada,Uber,Cab rides,2025-02-24
+W20,Arun Patil,9000000020,Mumbai,Uber,Cab rides,2025-12-21
+W21,Anjali Khan,9000000021,Delhi,Uber,Cab rides,2026-02-15
+W22,Pavan Ali,9000000022,Warangal,Uber,Cab rides,2024-11-29
+W23,Radha Patel,9000000023,Bengaluru,Uber,Cab rides,2024-11-02
+W24,Sunitha Mishra,9000000024,Kolkata,Uber,Cab rides,2024-12-11
+W25,Lakshmi Goud,9000000025,Visakhapatnam,Uber,Cab rides,2025-04-01
+W26,Meena Yadav,9000000026,Warangal,Uber,Cab rides,2025-09-09
+W27,Amit Chowdary,9000000027,Delhi,Uber,Cab rides,2025-12-29
+W28,Aarav Raju,9000000028,Delhi,Uber,Cab rides,2025-09-10
+W29,Sita Mohammed,9000000029,Bengaluru,Uber,Cab rides,2025-09-23
+W30,Anjali Yadav,9000000030,Guntur,Uber,Cab rides,2025-08-08
+W31,Neha Sharma,9000000031,Visakhapatnam,Ola,Cab rides,2024-03-31
+W32,Ajay Raju,9000000032,Mumbai,Ola,Cab rides,2025-12-22
+W33,Harish Mishra,9000000033,Bengaluru,Ola,Cab rides,2024-11-22
+W34,Ravi Nair,9000000034,Visakhapatnam,Ola,Cab rides,2025-02-12
+W35,Pavan Das,9000000035,Chennai,Ola,Cab rides,2024-07-01
+W36,Sita Joshi,9000000036,Pune,Ola,Cab rides,2024-01-12
+W37,Mahesh Patil,9000000037,Chennai,Ola,Cab rides,2024-03-23
+W38,Naveen Mishra,9000000038,Tirupati,Ola,Cab rides,2024-07-23
+W39,Vikram Prasad,9000000039,Mumbai,Swiggy,Food delivery,2024-04-10
+W40,Charan Varma,9000000040,Tirupati,Swiggy,Food delivery,2025-01-09
+W41,Ravi Iyer,9000000041,Guntur,Swiggy,Food delivery,2025-09-07
+W42,Charan Rao,9000000042,Chennai,Swiggy,Food delivery,2026-05-26
+W43,Rohit Joshi,9000000043,Kolkata,Swiggy,Food delivery,2025-01-21
+W44,Pooja Joshi,9000000044,Warangal,Swiggy,Food delivery,2025-04-08
+W45,Jyothi Goud,9000000045,Kolkata,Swiggy,Food delivery,2024-05-08
+W46,Rahul Shetty,9000000046,Warangal,Swiggy,Food delivery,2025-02-16
+W47,Lakshmi Rao,9000000047,Chennai,Swiggy,Food delivery,2024-10-08
+W48,Manoj Prasad,9000000048,Mumbai,Swiggy,Food delivery,2024-11-04
+W49,Sowmya Reddy,9000000049,Chennai,Swiggy,Food delivery,2026-05-23
+W50,Harish Shetty,9000000050,Guntur,Swiggy,Food delivery,2026-04-06
+W51,Arun Shetty,9000000051,Mumbai,Swiggy,Food delivery,2024-04-01
+W52,Sowmya Naidu,9000000052,Warangal,Swiggy,Food delivery,2024-11-02
+W53,Sowmya Gupta,9000000053,Hyderabad,Zomato,Food delivery,2024-02-18
+W54,Priya Reddy,9000000054,Guntur,Zomato,Food delivery,2025-08-30
+W55,Mahesh Mohammed,9000000055,Kolkata,Zomato,Food delivery,2024-01-22
+W56,Divya Shetty,9000000056,Pune,Zomato,Food delivery,2024-06-06
+W57,Sandeep Khan,9000000057,Kolkata,Zomato,Food delivery,2024-07-05
+W58,Revathi Goud,9000000058,Visakhapatnam,Zomato,Food delivery,2024-04-04
+W59,Padma Shaik,9000000059,Mumbai,Zomato,Food delivery,2026-04-01
+W60,Anil Patil,9000000060,Chennai,Zomato,Food delivery,2024-12-20
+W61,Padma Raju,9000000061,Vijayawada,Zomato,Food delivery,2025-04-13
+W62,Imran Khan,9000000062,Tirupati,Zomato,Food delivery,2025-10-10
+W63,Bharath Varma,9000000063,Delhi,Zomato,Food delivery,2024-05-07
+W64,Kavya Gupta,9000000064,Tirupati,Zomato,Food delivery,2025-04-19
+W65,Kavya Sharma,9000000065,Tirupati,Blinkit,Grocery delivery,2026-06-09
+W66,Rohit Patil,9000000066,Tirupati,Blinkit,Grocery delivery,2025-11-28
+W67,Naveen Babu,9000000067,Tirupati,Blinkit,Grocery delivery,2024-06-12
+W68,Revathi Babu,9000000068,Hyderabad,Blinkit,Grocery delivery,2025-11-17
+W69,Swathi Shaik,9000000069,Guntur,Blinkit,Grocery delivery,2024-01-30
+W70,Swathi Rao,9000000070,Guntur,Blinkit,Grocery delivery,2026-01-24
+W71,Anil Varma,9000000071,Mumbai,Zepto,Grocery delivery,2024-01-22
+W72,Bharath Kumar,9000000072,Guntur,Zepto,Grocery delivery,2025-09-14
+W73,Sunitha Patil,9000000073,Warangal,Zepto,Grocery delivery,2025-07-07
+W74,Rohit Das,9000000074,Chennai,Zepto,Grocery delivery,2024-04-14
+W75,Sunitha Babu,9000000075,Kolkata,Zepto,Grocery delivery,2024-03-07
+W76,Kiran Gupta,9000000076,Guntur,Urban Company,Home service jobs,2026-04-20
+W77,Sunil Patel,9000000077,Visakhapatnam,Urban Company,Home service jobs,2025-01-20
+W78,Padma Ali,9000000078,Chennai,Urban Company,Home service jobs,2026-04-14
+W79,Priya Nair,9000000079,Warangal,Urban Company,Home service jobs,2026-05-18
+W80,Vikram Reddy,9000000080,Chennai,Urban Company,Home service jobs,2025-06-07
+W81,Jyothi Nair,9000000081,Hyderabad,Urban Company,Home service jobs,2025-09-01
+W82,Bhavani Shaik,9000000082,Kolkata,Urban Company,Home service jobs,2025-12-01
+W83,Teja Sharma,9000000083,Hyderabad,Urban Company,Home service jobs,2024-09-25
+W84,Ajay Patel,9000000084,Chennai,Porter,Goods transport,2024-03-05
+W85,Radha Chowdary,9000000085,Guntur,Porter,Goods transport,2024-02-28
+W86,Bharath Sharma,9000000086,Visakhapatnam,Porter,Goods transport,2025-08-16
+W87,Ajay Naidu,9000000087,Bengaluru,Porter,Goods transport,2024-02-19
+W88,Salman Chowdary,9000000088,Warangal,Porter,Goods transport,2024-05-31
+W89,Srinivas Verma,9000000089,Delhi,Shadowfax,Parcel delivery,2026-03-08
+W90,Revathi Mishra,9000000090,Pune,Amazon Flex,Package delivery,2025-09-08
+W91,Rohit Mishra,9000000091,Pune,Shadowfax,Parcel delivery,2024-05-12
+W92,Sunitha Goud,9000000092,Visakhapatnam,Amazon Flex,Package delivery,2024-08-02
+W93,Pooja Reddy,9000000093,Warangal,Shadowfax,Parcel delivery,2025-04-05
+W94,Priya Kulkarni,9000000094,Chennai,Borzo,Courier delivery,2025-11-08
+W95,Bharath Yadav,9000000095,Tirupati,Amazon Flex,Package delivery,2026-05-30
+W96,Bhavani Naidu,9000000096,Visakhapatnam,Amazon Flex,Package delivery,2024-10-08
+W97,Pooja Chowdary,9000000097,Vijayawada,Borzo,Courier delivery,2025-03-23
+W98,Meena Shaik,9000000098,Guntur,Borzo,Courier delivery,2026-01-11
+W99,Prasad Sharma,9000000099,Vijayawada,Borzo,Courier delivery,2026-03-20
+W100,Salman Patel,9000000100,Kolkata,Amazon Flex,Package delivery,2025-04-20

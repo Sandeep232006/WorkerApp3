@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My payments · Gig Worker Tracker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main>
+  <h1>Gig worker earnings tracker</h1>
+  <p class="sub" id="who"></p>
+  <nav class="tabs"><a class="tab" href="summary.html">📊 My earnings</a><a class="tab" href="schedule.html">📅 Payout schedule</a><a class="tab" href="overview.html" aria-current="page">🧾 My payments</a><a class="tab" href="index.html">➕ Add job</a></nav>
+  <hr>
+  <div class="tools">
+      <input id="q" placeholder="Search platform, job, txn" aria-label="Search">
+      <select id="sf" aria-label="Filter"><option value="">All</option><option value="PAID">Paid</option><option value="LATE">Late</option><option value="PENDING">Pending</option><option value="DISC">Discrepancies</option></select>
+      
+      
+    </div>
+    <p class="err" id="msg" role="status"></p>
+    <div id="list"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
